@@ -1,8 +1,19 @@
 import React from 'react'
+import VideoListItem from './video_list_item'
 
-const VideoList = (props) => {
+const VideoList = ({videos}) => {
+
+const videoItems = videos.map(video => {
+  return(
+    <VideoListItem video={video} key={video.id.videoId}/>
+  )
+})
+
+console.log(videoItems, 'here')
   return (
-    <ul>{props.videos.length}</ul>
+    <ul className="col-md-4 list-group">
+        {videoItems}
+      </ul>
   )
 }
 
