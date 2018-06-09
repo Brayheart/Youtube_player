@@ -9,7 +9,6 @@ const videoItems = videos.map(video => {
   )
 })
 
-console.log(videoItems, 'here')
   return (
     <ul className="col-md-4 list-group">
         {videoItems}

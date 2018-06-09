@@ -1,7 +1,7 @@
 import React from 'react'
 
 const VideoListEntry = ({video}) => {
-  console.log(video)
+
   const image = video.snippet.thumbnails.default.url
   const heading = video.snippet.description
 
